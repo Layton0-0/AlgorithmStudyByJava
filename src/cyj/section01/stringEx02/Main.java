@@ -10,6 +10,8 @@ public class Main {
     }
 
     static String solution(String str) {
+        // StringBuilder를 활용할 경우 매번 String constant pool에
+        // 새로운 String 객체가 생성되지 않아 효율적이다.
         StringBuilder answer = new StringBuilder();
         char[] arr = str.toCharArray();
         // Character의 함수들을 활용해 정답에 차례로 더해준다.
