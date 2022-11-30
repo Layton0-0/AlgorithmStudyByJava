@@ -1,4 +1,4 @@
-package cyj.section01.stringEx05;
+package src.cyj.section01.stringEx05;
 
 import java.util.*;
 
@@ -8,6 +8,7 @@ public class Main {
         String str = sc.next();
         System.out.println(solution(str));
     }
+
     static String solution(String str) {
         char[] arr = str.toCharArray();
         int start = 0;
@@ -15,13 +16,13 @@ public class Main {
 
         // 투포인터 느낌
         // 시작 포인트는 한칸씩 뒤로, 끝 포인트는 한칸씩 앞으로 오며 모든 지점을 검사한다.
-        while(start < end) {
+        while (start < end) {
             // 앞점이 알파벳이 아니라면 패스
-            if(!Character.isAlphabetic(arr[start])) {
+            if (!Character.isAlphabetic(arr[start])) {
                 start++;
             }
             // 끝점이 알파벳이 아니라면 패스
-            else if(!Character.isAlphabetic(arr[end])) {
+            else if (!Character.isAlphabetic(arr[end])) {
                 end--;
             }
             // 앞점과 끝점이 모두 알파벳일 경우 서로 교환 후 이동한다.

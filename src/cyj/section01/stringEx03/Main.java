@@ -1,4 +1,4 @@
-package cyj.section01.stringEx03;
+package src.cyj.section01.stringEx03;
 
 import java.util.*;
 
@@ -16,8 +16,8 @@ public class Main {
         String[] arr = str.split(" ");
 
         // 길이가 지금까지 중에 가장 클 경우에만 길이와 정답을 갱신.
-        for(String s: arr) {
-            if(s.length() > len) {
+        for (String s : arr) {
+            if (s.length() > len) {
                 len = s.length();
                 answer = s;
             }

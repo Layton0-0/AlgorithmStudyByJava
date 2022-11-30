@@ -1,4 +1,4 @@
-package cyj.section01.stringEx01;
+package src.cyj.section01.stringEx01;
 
 import java.util.*;
 
@@ -18,8 +18,9 @@ public class Main {
         char[] arr = str.toCharArray();
 
         // 문자열 전체를 조회하며 같은 문자를 발견하면 정답+1
-        for(char x: arr) {
-            if(x == c) answer++;
+        for (char x : arr) {
+            if (x == c)
+                answer++;
         }
 
         return answer;

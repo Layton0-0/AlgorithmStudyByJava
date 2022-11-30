@@ -1,4 +1,4 @@
-package cyj.section01.stringEx02;
+package src.cyj.section01.stringEx02;
 
 import java.util.*;
 
