@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
     public String solution(int i, String s) {
         String answer = "";
-        
+
         for (int j = 0; j < i; j++) {
             String tmp = s.substring(j*7, j*7+7);
             tmp = tmp.replace('#', '1');
